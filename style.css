@@ -1,0 +1,319 @@
+
+@import url('https://fonts.cdnfonts.com/css/norse');
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    display: grid;
+    /* grid-template-rows: 0.7fr 3fr 0.6fr; */
+    background-color: rgb(224, 217, 224);
+    position: relative;
+    
+}
+
+/* .container{
+    background-color: rgb(224, 217, 224);
+    position: relative;
+} */
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    height: 55px;
+}
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: large;
+}
+
+.headerButts:hover {
+    transform: scale(1.005);
+    box-shadow: 
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(137, 179, 216);
+    cursor: pointer;
+}
+
+main{
+    background-color: rgb(224, 217, 224);
+    padding-top: 3rem;
+    /* max-width: auto; */
+}
+
+.footImg{
+    max-width: 100px;
+}
+
+.nameImg{
+    background-color: rgb(49, 81, 179);
+    /* transform-origin: left;
+    transform: skewY(-1deg); */
+    z-index: -1;
+    padding: 5px 0.5rem;
+}
+.nameImg nav{
+    display: flex;
+    gap: 60px;
+}
+.name{
+    padding-left: 3rem;
+    color: rgb(252, 247, 247);
+}
+
+.aboutMe{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.skillMain{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.skill{   
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 3fr));
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-left: auto;
+    margin-right: auto; 
+    /* display: flex;
+    gap: 30px; */
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+.skillList{
+    display: flex;
+    gap: 10px;
+}
+.skillMain h2{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/* Link to change CSS color to equivalent color: https://codepen.io/sosuke/pen/Pjoqqp */
+/* .skillSvg {
+    filter: brightness(0) invert(1);
+} */
+
+.resume{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 20px;
+}
+
+.proHead{
+    color: rgb(73, 21, 21);
+    font-style:oblique;
+}
+
+.allProject{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20px, 1fr)); 
+    margin: 0 20px;
+    gap: 20px;
+    /* margin-top: 10px; */
+}
+
+
+.allProject .cards{
+    text-align: left;
+    padding: 0 10px;
+    border: 5px solid white; 
+    background-color: white;
+    box-shadow: 
+        /*inset 0 -3em 3em rgb(0 200 0 / 30%),*/
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(218, 225, 231);
+    border-radius: 1vh;
+    border-left-color: orange;
+    font-size: 18px;
+    /* height: 100%; */
+}
+
+.allProject .cards {
+    transition: 
+        transform 0.25s, background-color 0.25s;
+    /* transition: background-color 1s ease-out 0.25s; */
+}
+
+.allProject .cards:hover {
+    transform: scale(1.05);
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.mainSvg{
+    display: flex;
+    justify-content: end;
+    gap:10px
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contacts{
+    background-color: rgb(209, 209, 144);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 20px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+@media (max-width: 800px){
+    .allProject{
+        grid-template-columns: repeat(2, minmax(10px, 0.5fr));
+        margin: 0 10px;
+        gap: 10px;
+    }
+    .allProject section{
+        font-size: 14px;
+    }  
+
+    .name{
+        padding-left: 0;
+    }
+    .nameImg nav{
+        display: flex;
+        flex-direction: column;
+        /* gap: 60px; */
+        row-gap: 10px;
+    }
+
+    .skill{   
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 2fr));
+        row-gap: 10px;
+        column-gap: 10px;
+        /* display: flex;
+        gap: 30px; */
+    }
+}
+
+@media (max-width: 1200px ){
+    .skill{   
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 3fr));
+        row-gap: 10px;
+        column-gap: 10px;
+        /* display: flex;
+        gap: 30px; */
+    }
+}
+
+
+
+footer {
+    height: 72px;
+    background: #6281ad;
+    color: white;
+    bottom: 0;
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 52px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (min-width: 900px){
+    .nameImg nav{
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+    
+}
+
+@font-face {
+    font-family: Norse;
+    src: url('./assets/Norse-Bold.otf');
+}
+
+@font-face {
+    font-family: Norse;
+    font-weight: bold;
+    src: url('./assets/Norse-Bold.otf');
+}
+
+h1 {
+    color: rgb(236, 226, 226);
+    font-size: 60px;
+    font-family: 'Norse';
+    font-weight: bold;
+    /* filter: brightness(100); */
+}
+
+form {
+    display: inline-block;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color: #79c2d0;
+}
+  
+
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+}
+
+input,
+select {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus {
+  border-color: #000;
+}
+
+.buttns {
+    padding-right: 50px;
+}
+
+button {
+    margin-left: 0.5em;
+    border-radius: 0.5rem;
+    background-color: #27296d;
+    color: white;
+}
+
+.resume button {
+    margin-left: 1em;
+    border-radius: 0.5rem;
+    background-color: #27296d;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+  
