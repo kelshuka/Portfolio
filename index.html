@@ -5,6 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio - Blessing Ukamaka Ikechukwu</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="data:,">
+        <link rel="icon" href="data:,">
+
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("QWdvmLofGsZS_v4pi");
+        })();
+        </script>
+
     </head>
 
     <body>
@@ -40,10 +52,9 @@
                     </div>
 
                     <div class="aboutMe">
-                        <h2>About Me</h2>
+                        <h2 id="aboutme">About Me</h2>
                         <section class="aboutDesc">
-                            <p>A passionate Full Stack developer specializing in creating r
-                                esponsive and dynamic web applications. 
+                            <p>A passionate Full Stack developer specializing in creating responsive and dynamic web applications. 
                             </p>
                             <p>Also a passionate data analyst with experience working as a researcher
                                 in the field of health.
@@ -52,11 +63,11 @@
                     </div>
 
                     <div class="skillMain">
-                        <h2>Skills</h2>
+                        <h2 id="skillmain">Skills</h2>
                         <div class="skill">
                             <section class="skills">
                                 <div>Front End:</div>
-                                <div class="skillList">
+                                <div class="skillList" style="padding-right: 10px;">
                                     <div>                                      
                                         <img class="skillSvg"  src="./svg/icons8-javascript.svg" 
                                             alt="" width="50" height="50" />
@@ -80,7 +91,7 @@
                                 </div>
                             </section>
 
-                            <section class="skills">
+                            <section class="skills" style="padding-left: 10px;">
                                 <div>Back End:</div>
                                 <div class="skillList">
                                     <div>
@@ -143,7 +154,7 @@
                     </div>
 
                     <div class="resume">
-                        <a href="./docs/cv.pdf" target="_blank" rel="noopener noreferrer" download>
+                        <a href="./docs/Blessing_Ikechukwu_CV.pdf" target="_blank" rel="noopener noreferrer" download>
                             <button>Download Resume</button>
                         </a>
                     </div>
@@ -152,105 +163,168 @@
 
 
                 <section class="projects" id="projects">
-                    <h2 class="proHead" style="text-align: center;" aria-label="author's list of Projects"> SOME PROJECTS</h2>
+                    <h2 class="proHead" style="text-align: center;" aria-label="author's list of Projects"> Some Projects</h2>
                     <div class="allProject">
                         
                         <div class="cards">
-                            <p class="title" aria-label="Calculator project"> File Uploader </p>
-                            <section id="first" aria-describedby="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quos numquam eius modi sequi perspiciatis nam, voluptas eos at deserunt quisquam mollitia explicabo consequatur natus aut neque tempora molestias nihil!</section>
+                            <p class="title" aria-label="File uploader project"> File Uploader </p>
+                            <section id="first" aria-describedby="first">
+                                <img class="mImg" src="./images/projectImages/fileUploader.png" alt="file uploader image" />
+                            </section>
                             <div class="mainSvg" style="padding-top: 50px; padding-bottom: 20px;">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
-                                alt="" width="20" height="20"/>
-                                <img class="mSvg"  src="./svg/open.svg" 
-                                alt="" width="20" height="20" />
+                                <a href="https://github.com/kelshuka/File_Uploader.git" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
+                                    alt="" width="20" height="20"/>
+                                </a>
+
+                                <a href="https://fileuploader-drive.up.railway.app/" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg"  src="./svg/open.svg" 
+                                    alt="" width="20" height="20" />
+                                </a>
                             </div>
                         </div> 
 
                         <div class="cards">
-                            <p class="title" aria-label="Library project"> Blog API Posts </p>
-                            <section id="second" aria-describedby="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laborum excepturi, quidem molestiae eos iure perferendis repellat aperiam vel consequatur nisi provident temporibus. Facere quas placeat sequi, deleniti neque ex.</section>
+                            <p class="title" aria-label="Blog API posts project"> Blog API Posts </p>
+                            <section id="second" aria-describedby="second">
+                                <img class="mImg" src="./images/projectImages/BlogPosts.png" alt="blog posts image" />
+                            </section>
                             <div class="mainSvg" style="padding-top: 50px; padding-bottom: 20px;">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
-                                alt="" width="20" height="20"/>
-                                <img class="mSvg"  src="./svg/open.svg" 
-                                alt="" width="20" height="20" />
+                                <a href="https://github.com/kelshuka/Blog_Users.git" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
+                                    alt="" width="20" height="20"/>
+                                </a>
+
+                                <a href="https://blog-users-beige.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg"  src="./svg/open.svg" 
+                                    alt="" width="20" height="20" />
+                                </a>
                             </div>
                         </div> 
 
                         <div class="cards">
-                            <p class="title" aria-label="Etch a Sketch project">Shopping Cart</p>
-                            <section id="third" aria-describedby="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio veniam, totam aut, facilis esse excepturi explicabo quod ex quos pariatur inventore quae rem id repellat blanditiis placeat aspernatur nostrum debitis.</section>
+                            <p class="title" aria-label="shopping cart project">Shopping Cart</p>
+                            <section id="third" aria-describedby="third">
+                                <img class="mImg" src="./images/projectImages/ShoppingCart.png" alt="shopping cart image" />
+                            </section>
                             <div class="mainSvg" style="padding-top: 50px; padding-bottom: 20px;">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
-                                alt="" width="20" height="20"/>
-                                <img class="mSvg"  src="./svg/open.svg" 
-                                alt="" width="20" height="20" />
+                                <a href="https://github.com/kelshuka/Shopping_Cart.git" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
+                                    alt="" width="20" height="20"/>
+                                </a>
+
+                                <a href="https://shopping-cart-5q2.pages.dev/" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg"  src="./svg/open.svg" 
+                                    alt="" width="20" height="20" />
+                                </a>
                             </div>
                         </div> 
 
                         <div class="cards">
-                            <p class="title" aria-label="Rock Paper Scissors project">Members Club</p>
-                            <section id="fourth" aria-describedby="fourth">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, fugiat nihil, expedita perspiciatis animi veritatis a voluptate similique dolore aliquam blanditiis nesciunt. Temporibus, itaque nemo assumenda ea cumque placeat autem.</section>
+                            <p class="title" aria-label="Members club project">Members Club</p>
+                            <section id="fourth" aria-describedby="fourth">
+                                <img class="mImg" src="./images/projectImages/MembersClub.png" alt="members club image" />
+                            </section>
                             <div class="mainSvg" style="padding-top: 50px; padding-bottom: 20px;">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
-                                alt="" width="20" height="20"/>
-                                <img class="mSvg"  src="./svg/open.svg" 
-                                alt="" width="20" height="20" />
+                                <a href="https://github.com/kelshuka/Members_Only.git" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
+                                    alt="" width="20" height="20"/>
+                                </a>
+
+                                <a href="https://membersonly-club.up.railway.app/" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg"  src="./svg/open.svg" 
+                                    alt="" width="20" height="20" />
+                                </a>
                             </div>
                         </div> 
 
                         <div class="cards">
-                            <p class="title" aria-label="Recipes project"> CV Application </p>
-                            <section id="fifth" aria-describedby="fifth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit a vitae cumque repellendus mollitia iure consequatur qui officiis ullam itaque? Quibusdam porro aut impedit, quisquam eligendi perspiciatis distinctio veritatis at.</section>
+                            <p class="title" aria-label="CV application project"> CV Application </p>
+                            <section id="fifth" aria-describedby="fifth">
+                                <img class="mImg" src="./images/projectImages/CVApplication.png" alt="cv application image" />
+                            </section>
                             <div class="mainSvg" style="padding-top: 50px; padding-bottom: 20px;">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
-                                alt="" width="20" height="20"/>
-                                <img class="mSvg"  src="./svg/open.svg" 
-                                alt="" width="20" height="20" />
+                                <a href="https://github.com/kelshuka/CV_Application.git" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
+                                    alt="" width="20" height="20"/>
+                                </a>
+
+                                <a href="https://cv-app-dp0.pages.dev/" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg"  src="./svg/open.svg" 
+                                    alt="" width="20" height="20" />
+                                </a>
                             </div>
                         </div> 
 
                         <div class="cards">
-                            <p class="title" aria-label="Tic Tac Toe project"> Memory Card </p>
-                            <section id="sixth" aria-describedby="sixth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sequi officia aut id quisquam neque similique obcaecati odio perspiciatis aliquid necessitatibus repellat, maiores, nemo ratione eveniet harum doloribus tenetur perferendis.</section>
+                            <p class="title" aria-label="Memory Card project"> Memory Card </p>
+                            <section id="sixth" aria-describedby="sixth">
+                                <img class="mImg" src="./images/projectImages/MemoryCard.png" alt="memory card image" />
+                            </section>
                             <div class="mainSvg" style="padding-top: 50px; padding-bottom: 20px;">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
-                                alt="" width="20" height="20"/>
-                                <img class="mSvg"  src="./svg/open.svg" 
-                                alt="" width="20" height="20" />
+                                <a href="https://github.com/kelshuka/Memory_Card.git" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
+                                    alt="" width="20" height="20"/>
+                                </a>
+
+                                <a href="https://memory-card-7cd.pages.dev/" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg"  src="./svg/open.svg" 
+                                    alt="" width="20" height="20" />
+                                </a>
                             </div>
                         </div> 
 
                         <div class="cards">
                             <p class="title" aria-label="Weather App project">Weather App</p>
-                            <section id="seventh" aria-describedby="seventh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor consequuntur accusamus, debitis veritatis cupiditate obcaecati. Omnis aliquam blanditiis exercitationem minima saepe commodi, dicta magni nostrum fugit consequuntur, rerum itaque iure.</section>
+                            <section id="seventh" aria-describedby="seventh">
+                                <img class="mImg" src="./images/projectImages/WeatherApp.png" alt="weather app image" />
+                            </section>
                             <div class="mainSvg" style="padding-top: 50px; padding-bottom: 20px;">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
-                                alt="" width="20" height="20"/>
-                                <img class="mSvg"  src="./svg/open.svg" 
-                                alt="" width="20" height="20" />
+                                <a href="https://github.com/kelshuka/Weather_App.git" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
+                                    alt="" width="20" height="20"/>
+                                </a>
+
+                                <a href="https://kelshuka.github.io/Weather_App/" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg"  src="./svg/open.svg" 
+                                    alt="" width="20" height="20" />
+                                </a>
                             </div>
                         </div> 
 
                         <div class="cards">
                             <p class="title" aria-label="Battleship Game project"> Tic tac Toe</p>
-                            <section id="eight" aria-describedby="eight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam hic recusandae aperiam, autem voluptas impedit sit harum deleniti reiciendis similique labore iure eligendi commodi omnis ut enim quibusdam quisquam odio!</section>
+                            <section id="eight" aria-describedby="eight">
+                                <img class="mImg" src="./images/projectImages/TicTacToe.png" alt="tic tac toe image" />
+                            </section>
                             <div class="mainSvg" style="padding-top: 50px; padding-bottom: 20px;">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
-                                alt="" width="20" height="20"/>
-                                <img class="mSvg"  src="./svg/open.svg" 
-                                alt="" width="20" height="20" />
+                                <a href="https://github.com/kelshuka/Tic-Tac-Toe.git" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
+                                    alt="" width="20" height="20"/>
+                                </a>
+
+                                <a href="https://kelshuka.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg"  src="./svg/open.svg" 
+                                    alt="" width="20" height="20" />
+                                </a>
                             </div>
                         </div>
 
                         <div class="cards">
                             <p class="title" aria-label="Battleship Game project"> Calculator</p>
-                            <section id="eight" aria-describedby="eight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam hic recusandae aperiam, autem voluptas impedit sit harum deleniti reiciendis similique labore iure eligendi commodi omnis ut enim quibusdam quisquam odio!</section>
+                            <section id="ninth" aria-describedby="ninth">
+                                <img class="mImg" src="./images/projectImages/Calculator.png" alt="calculator image" />
+                            </section>
                             <div class="mainSvg" style="padding-top: 50px; padding-bottom: 20px;">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
-                                alt="" width="20" height="20"/>
-                                <img class="mSvg"  src="./svg/open.svg" 
-                                alt="" width="20" height="20" />
+                                <a href="https://github.com/kelshuka/Calculator.git" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
+                                    alt="" width="20" height="20"/>
+                                </a>
+
+                                <a href="https://kelshuka.github.io/Calculator/" target="_blank" rel="noopener noreferrer">
+                                    <img class="mSvg"  src="./svg/open.svg" 
+                                    alt="" width="20" height="20" />
+                                </a>
                             </div>
                         </div> 
                         
@@ -258,7 +332,7 @@
                 </section> 
                 
                 <section class="contacts" id="contacts">
-                    <h3 id="contact" aria-labelledby="note addres Tel email" >CONTACT ME</h3>
+                    <h2 id="contact" aria-labelledby="note addres Tel email" >Contact Me</h2>
 
                     <div class="contact">
                         
@@ -267,40 +341,38 @@
 
                                 <fieldset>
                     
-                                    <p style="font-weight: bold; text-align: center;"><em>BOOK DETAILS</em>
-                                    </p>
+                                    <!-- <p style="font-weight: bold; text-align: center;"><em>EMAIL ME</em>
+                                    </p> -->
                     
                                     <div class="messengerName">
                                         <label for="mName">Name<sup>*</sup>: </label>
-                                        <input type="text" id="mName" name = "mmessenger Name" required>
+                                        <input type="text" id="mName" name = "from_name" required>
                                     </div>
                     
                                     <p></p>
                     
                                     <div class="messengerEmail">
                                         <label for="mEmail">Email<sup>*</sup>: </label>
-                                        <input type="text" id="mEmail" name = "messenger Email" required>
+                                        <input type="text" id="mEmail" name = "from_email" required>
                                     </div>
                     
                                     <p></p>
                     
                                     <div class="messengerSubject">
                                         <label for="mSubject">Subject<sup>*</sup>: </label>
-                                        <input type="text" id="mSubject" name="messenger Subject" required></input>
+                                        <input type="text" id="mSubject" name="subject" required></input>
                                     </div>
             
                                     <p></p>
 
                                     <div class="messengerMessage">
                                         <label for="mMessage">Message<sup>*</sup>: </label>
-                                        <textarea name="messenger Message" id="mMessage" placeholder="Write your message" required></textarea>
+                                        <textarea name="message" id="mMessage" placeholder="Write your message" required></textarea>
                                     </div>
                                     
                     
                                     <div class="buttns">                                   
-                                        <button type="submit">Send Message</button>
-                                        <p></p>
-                                        <input type="button" id="clr" value="clear form" style="background-color: #27296d; width: 100px; height: 30px; color: white;">
+                                        <button type="submit" id="sendMessage">Send Message</button>                                      
                                     </div>
                     
                                 </fieldset>
@@ -314,20 +386,15 @@
                         <div class="Tel" style="display: flex; gap: 10px;">
                             <img class="mSvg"  src="./svg/phone-outline.svg" 
                             alt="" width="20" height="20" />
-                            <section id="Tel"> 0193-4589</section>
+                            <section id="Tel"> +351920419753</section>
                         </div>
                         <div class="Tel" style="display: flex; gap: 10px;">
                             <img class="mSvg"  src="./svg/email-outline.svg" 
                             alt="" width="20" height="20" />
-                            <section id="email"> anyone@gmail.com</section>
+                            <section id="email"> blessingikechukwu901@gmail.com</section>
                         </div>
                     </div>
-                    <div class="contactSvg" style="margin-left: 20px;">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
-                        alt="" width="50" height="40"/>
-                    </div>
-                    
-
+                   
                 </section>
 
             </main>
